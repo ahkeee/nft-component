@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.nft-container {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: hsl(216, 50%, 16%, 0.4) 0px 7px 29px 0px;
+    border-radius: .8rem;
+    gap: 22px;  
+}
+
+.image {
+    align-self: center;
+    width: 300px;
+    margin-top: 22px;
+    border-radius: .8rem;
+}
+
+.nft-title {
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-text {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.text {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-text {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+/* #price-eth {
+    
+} */
+
+.time-text {
+    color: hsl(215, 51%, 70%);
+    margin-right: 25px;
+}
+
+hr {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: hsl(215, 32%, 27%);
+    border-style: solid;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    
+}
+
+footer img {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+
+}
+
+.footer-text {
+    color: hsl(0, 0%, 100%);
+    margin-left: 0.7rem;
+}
+
+footer .jules {
+    color: hsl(215, 51%, 70%);
+}
+
+.nft-title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+footer .wyvern:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
