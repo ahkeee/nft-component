@@ -33,13 +33,52 @@ body {
     gap: 22px;  
 }
 
+/* nft image */
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image {
-    align-self: center;
     width: 300px;
     margin-top: 22px;
     border-radius: .8rem;
 }
 
+.overlay {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 302px;
+    width: 300px;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .image-container:hover .overlay + .view {
+    display: block;
+  }
+
+  /* nft price and details */
 .nft-title {
     color: hsl(0, 0%, 100%);
 }
@@ -60,21 +99,31 @@ body {
     justify-content: space-between;
 }
 
+.eth-details {
+    margin-left: 1.6rem;
+    display: flex;
+}
+.clock-details {
+    margin-right: 1.6rem;
+    display: flex;
+}
+
+
+
 .eth-text {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 0.4rem;
 }
 
-/* #price-eth {
-    
-} */
+
 
 .time-text {
     color: hsl(215, 51%, 70%);
-    margin-right: 25px;
+    margin-left: 0.4rem;
 }
 
+/* for card footer */
 hr {
     margin-left: 25px;
     margin-right: 25px;
