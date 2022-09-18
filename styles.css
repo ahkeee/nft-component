@@ -100,11 +100,11 @@ body {
 }
 
 .eth-details {
-    margin-left: 1.6rem;
+    margin-left: 25px;
     display: flex;
 }
 .clock-details {
-    margin-right: 1.6rem;
+    margin-right: 25px;
     display: flex;
 }
 
